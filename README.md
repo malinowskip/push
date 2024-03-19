@@ -7,7 +7,7 @@ This package provides:
 - a TypeScript module for pushing messages to the _Pushover Message API_
   endpoint.
 - a CLI utility for usage in shell scripts. It may serve as an alternative to
-  calling the Pushover Message API using curl in shell scripts.
+  calling the Pushover Message API using curl.
 
 ## Usage examples
 
@@ -27,5 +27,5 @@ await push({
 
 ```shell
 // Send a message
-deno run https://raw.githubusercontent.com/malinowskip/push/main/cli.ts --user <YOUR_USERNAME> --token <YOUR_TOKEN> --message "Hello, world!"
+deno run --allow-net https://raw.githubusercontent.com/malinowskip/push/main/cli.ts --user <YOUR_USERNAME> --token <YOUR_TOKEN> --message "Hello, world!"
 ```
