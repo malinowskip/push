@@ -20,6 +20,9 @@ const cmd = await new Command()
   .option(
     "-p, --priority <priority:priority>",
     "Priority: -2, -1, 0 (default), 1, or 2",
+    {
+      depends: ["retry", "expire"]
+    }
   )
   .option(
     "-r, --retry <retry:number>",
