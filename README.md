@@ -1,13 +1,14 @@
 # @malinowskip/push
 
-A small Deno utility for interacting with the [Pushover Message API](https://pushover.net/api).
+A small Deno utility for interacting with the
+[Pushover Message API](https://pushover.net/api).
 
 This package provides:
 
-- a TypeScript module for pushing messages to the _Pushover Message API_
-  endpoint.
-- a CLI utility for usage in shell scripts. It may serve as an alternative to
-  calling the Pushover Message API using curl.
+- a TypeScript module exposing a `push` function, which can be used to send
+  notifications to the _Pushover Message API_ endpoint;
+- a Deno command-line utility which may serve as an alternative to calling the
+  Pushover Message API using curl.
 
 ## Usage examples
 
