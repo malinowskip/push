@@ -21,8 +21,8 @@ const cmd = await new Command()
     "-p, --priority <priority:priority>",
     "Priority: -2, -1, 0 (default), 1, or 2",
     {
-      depends: ["retry", "expire"]
-    }
+      depends: ["retry", "expire"],
+    },
   )
   .option(
     "-r, --retry <retry:number>",
@@ -104,8 +104,8 @@ async function main() {
   if (response.status !== 200) {
     const json = await response.json();
     if (json.errors instanceof Array) {
-      for (const el of json.errors) {
-        console.log(`Error: ${el.message}`);
+      for (const errorMessage of json.errors) {
+        console.log(`Error: ${errorMessage}`);
       }
     } else {
       console.log("Error: Failed to send message.");
