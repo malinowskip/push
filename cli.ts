@@ -2,7 +2,7 @@ import {
   ArgumentValue,
   Command,
 } from "https://deno.land/x/cliffy@v1.0.0-rc.3/command/mod.ts";
-import { push, PushoverMessage } from "./lib.ts";
+import { push, PushoverMessage } from "./mod.ts";
 import packageMeta from "./deno.json" with { type: "json" };
 
 const cmd = await new Command()
