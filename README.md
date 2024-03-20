@@ -28,7 +28,14 @@ await push({
 
 ### CLI
 
+#### Install
+
 ```shell
-// Send a message
-deno run --allow-net https://raw.githubusercontent.com/malinowskip/push/main/cli.ts --user <YOUR_USERNAME> --token <YOUR_TOKEN> --message "Hello, world!"
+deno install --allow-net -n push https://raw.githubusercontent.com/malinowskip/push/main/cli.ts
+```
+
+#### Send a message
+
+```shell
+push --user <YOUR_USERNAME> --token <YOUR_TOKEN> --message "Hello, world!"
 ```
