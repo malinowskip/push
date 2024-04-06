@@ -69,6 +69,13 @@ export interface PushoverMessage {
   expire?: number;
 
   /**
+   * A publicly-accessible URL that Pushover servers will send a request to when
+   * the user has acknowledged the notification (if `priority:` `2` is set).
+   * @see https://pushover.net/api#priority2
+   */
+  callback?: string;
+
+  /**
    * The name of a supported sound to override your default sound choice.
    * @see https://pushover.net/api#sounds
    */

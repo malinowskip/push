@@ -1,8 +1,8 @@
 import {
-  ArgumentValue,
+  type ArgumentValue,
   Command,
 } from "https://deno.land/x/cliffy@v1.0.0-rc.3/command/mod.ts";
-import { push, PushoverMessage } from "./mod.ts";
+import { push, type PushoverMessage } from "./mod.ts";
 import packageMeta from "./deno.json" with { type: "json" };
 
 const cmd = await new Command()
@@ -31,6 +31,11 @@ const cmd = await new Command()
   .option(
     "-e, --expire <expire:number>",
     "How many seconds a priority 2 notification will continue to be retried for.",
+    { depends: ["priority"] },
+  )
+  .option(
+    "-c, --callback <callback:string>",
+    "A publicly-accessible URL that Pushover servers will send a request to when the user has acknowledged the notification.",
     { depends: ["priority"] },
   )
   .option("-d, --device <device:string>", "Device name")
