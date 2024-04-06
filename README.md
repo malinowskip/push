@@ -17,7 +17,7 @@ This package provides:
 ### Deno
 
 ```typescript
-import { push } from "./mod.ts";
+import { push } from "jsr:@malinowskip/push";
 
 await push({
   user: "YOUR_USERNAME",
@@ -31,7 +31,7 @@ await push({
 #### Install
 
 ```shell
-deno install --allow-net -n push https://raw.githubusercontent.com/malinowskip/push/main/cli.ts
+deno install --allow-net -n push https://jsr.io/@malinowskip/push/0.1.0/cli.ts
 ```
 
 #### Send a message
