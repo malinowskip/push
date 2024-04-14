@@ -1,7 +1,7 @@
 import {
   type ArgumentValue,
   Command,
-} from "https://deno.land/x/cliffy@v1.0.0-rc.3/command/mod.ts";
+} from "https://deno.land/x/cliffy@v1.0.0-rc.4/command/mod.ts";
 import { push, type PushoverMessage } from "./mod.ts";
 import packageMeta from "./deno.json" with { type: "json" };
 
