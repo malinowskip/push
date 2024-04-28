@@ -1,4 +1,10 @@
 /**
+ * @module
+ * Utilities to send messages to the [Pushover Message
+ * API](https://pushover.net/api) endpoint.
+ */
+
+/**
  * Based on the [Pushover Message API documentation](https://pushover.net/api).
  */
 export interface PushoverMessage {

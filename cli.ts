@@ -1,3 +1,21 @@
+/**
+ * @module
+ * Command-line utility to send messages to the [Pushover Message
+ * API](https://pushover.net/api) endpoint.
+ *
+ * ## Install
+ *
+ * ```shell
+ * deno install --allow-net -n push jsr:@malinowskip/push/cli
+ * ```
+ *
+ * ## Send a message
+ *
+ * ```shell
+ * push --user <YOUR_USERNAME> --token <YOUR_TOKEN> --message "Hello, world!"
+ * ```
+ */
+
 import { type ArgumentValue, Command } from "jsr:@cliffy/command@1.0.0-rc.4";
 import { push, type PushoverMessage } from "./mod.ts";
 import packageMeta from "./deno.json" with { type: "json" };
