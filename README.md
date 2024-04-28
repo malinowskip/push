@@ -31,7 +31,7 @@ await push({
 #### Install
 
 ```shell
-deno install --allow-net -n push https://jsr.io/@malinowskip/push/0.1.0/cli.ts
+deno install --allow-net -n push https://jsr.io/@malinowskip/push/0.1.1/cli.ts
 ```
 
 #### Send a message
